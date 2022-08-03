@@ -1,14 +1,18 @@
-
-import './App.css';
-import React from 'react';
-import { Button } from '@mui/material';
+import "./App.css";
+import React from "react";
+import { Button, Grid } from "@mui/material";
+import NavBar from "./NavBar";
+import "./NavBar.css";
 
 function App() {
   return (
     <div className="App">
-        <h1>Hello world</h1>
-          <button>asd</button>
-          <Button>asd</Button>
+      <NavBar />
+      <Grid container>
+        <Grid xs={12}>
+          <Button variant="outlined">Test</Button>
+        </Grid>
+      </Grid>
     </div>
   );
 }
